@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EngineeringAssist" xml:space="preserve">
+    <value>Engineering assist</value>
+  </data>
+  <data name="EnginePMReadiness" xml:space="preserve">
+    <value>Engine PM/Readiness</value>
+  </data>
+  <data name="ExtendedStaffing" xml:space="preserve">
+    <value>Extended Staffing</value>
+  </data>
+  <data name="FalseAlarmCancel" xml:space="preserve">
+    <value>False Alarm / Cancel</value>
+  </data>
+  <data name="FireRehabAdmin" xml:space="preserve">
+    <value>Fire rehab / Admin</value>
+  </data>
+  <data name="FuelsRXBurning" xml:space="preserve">
+    <value>Fuels / RX Burning</value>
+  </data>
+  <data name="Hazmat" xml:space="preserve">
+    <value>Hazmat</value>
+  </data>
+  <data name="Hiring" xml:space="preserve">
+    <value>Hiring</value>
+  </data>
+  <data name="LEAssistSR" xml:space="preserve">
+    <value>LE Assist / S&amp;R</value>
+  </data>
+  <data name="LeaveType" xml:space="preserve">
+    <value>={"A/L";"S/L";"Holiday";"AWOL";"LWOP";"Military";"Admin"}</value>
+  </data>
+  <data name="LocalForestCadre" xml:space="preserve">
+    <value>Local / Forest cadre</value>
+  </data>
+  <data name="MedicalAid" xml:space="preserve">
+    <value>MedicalAid</value>
+  </data>
+  <data name="NonFireOT" xml:space="preserve">
+    <value>Non fire OT</value>
+  </data>
+  <data name="OtherEmergency" xml:space="preserve">
+    <value>Other Emergency</value>
+  </data>
+  <data name="OtherHours" xml:space="preserve">
+    <value>Other hours</value>
+  </data>
+  <data name="OtherHoursFormula" xml:space="preserve">
+    <value>SUM(IF(ISNA(MATCH(P7,leaveTypes,0)),0,IF(AB7="",BP4,AB7)),IF(ISNA(MATCH(P9,leaveTypes,0)),0,IF(AB9="",BP4,AB9)),IF(ISNA(MATCH(P11,leaveTypes,0)),0,IF(AB11="",BP4,AB11)),IF(ISNA(MATCH(P13,leaveTypes,0)),0,IF(AB13="",BP4,AB13)),IF(ISNA(MATCH(P15,leaveTypes,0)),0,IF(AB15="",BP4,AB15)),IF(ISNA(MATCH(P17,leaveTypes,0)),0,IF(AB17="",BP4,AB17)),IF(ISNA(MATCH(P19,leaveTypes,0)),0,IF(AB19="",BP4,AB19)),IF(ISNA(MATCH(P21,leaveTypes,0)),0,IF(AB21="",BP4,AB21)),IF(ISNA(MATCH(P23,leaveTypes,0)),0,IF(AB23="",BP4,AB23)),IF(ISNA(MATCH(P25,leaveTypes,0)),0,IF(AB25="",BP4,AB25)))</value>
+  </data>
+  <data name="OverheadAssignments" xml:space="preserve">
+    <value>Overhead Assignments</value>
+  </data>
+  <data name="PhysicalsDrugTest" xml:space="preserve">
+    <value>Physicals / Drug test</value>
+  </data>
+  <data name="PhysicalTraining" xml:space="preserve">
+    <value>Physical Training</value>
+  </data>
+  <data name="PreSuppression" xml:space="preserve">
+    <value>Pre-suppression</value>
+  </data>
+  <data name="PreventionPatrol" xml:space="preserve">
+    <value>Prevention / Patrol</value>
+  </data>
+  <data name="PublicMedia" xml:space="preserve">
+    <value>Public assist / Media</value>
+  </data>
+  <data name="RecreationAssist" xml:space="preserve">
+    <value>Recreation Assist</value>
+  </data>
+  <data name="RecruitmentOutreach" xml:space="preserve">
+    <value>Recruitment / Outreach</value>
+  </data>
+  <data name="RegionalCadre" xml:space="preserve">
+    <value>Regional cadre</value>
+  </data>
+  <data name="RegionalCommittee" xml:space="preserve">
+    <value>Regional committee</value>
+  </data>
+  <data name="ResourceAssist" xml:space="preserve">
+    <value>Resource assist</value>
+  </data>
+  <data name="Safety" xml:space="preserve">
+    <value>Safety</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>Severity</value>
+  </data>
+  <data name="SeverityFormula" xml:space="preserve">
+    <value>SUM(IF(P7=BQ84,IF(AB7="",BP4,AB7),0)+IF(P9=BQ84,IF(AB9="",BP4,AB9),0)+IF(P11=BQ84,IF(AB11="",BP4,AB11),0)+IF(P13=BQ84,IF(AB13="",BP4,AB13),0)+IF(P15=BQ84,IF(AB15="",BP4,AB15),0)+IF(P17=BQ84,IF(AB17="",BP4,AB17),0)+IF(P19=BQ84,IF(AB19="",BP4,AB19),0)+IF(P21=BQ84,IF(AB21="",BP4,AB21),0)+IF(P23=BQ84,IF(AB23="",BP4,AB23),0)+IF(P25=BQ84,IF(AB25="",BP4,AB25),0))</value>
+  </data>
+  <data name="StandByCover" xml:space="preserve">
+    <value>Stand-by / Cover</value>
+  </data>
+  <data name="StationAdministration" xml:space="preserve">
+    <value>Station Administration</value>
+  </data>
+  <data name="StationMaintenance" xml:space="preserve">
+    <value>Station Maintenance</value>
+  </data>
+  <data name="StructureFire" xml:space="preserve">
+    <value>Structure Fire</value>
+  </data>
+  <data name="TrafficCollision" xml:space="preserve">
+    <value>Traffice Collision</value>
+  </data>
+  <data name="Training" xml:space="preserve">
+    <value>Training</value>
+  </data>
+  <data name="VehicleFire" xml:space="preserve">
+    <value>Vehicle Fire</value>
+  </data>
+  <data name="WCT" xml:space="preserve">
+    <value>WCT(Work Capacity Test)</value>
+  </data>
+  <data name="WildlandFireBase" xml:space="preserve">
+    <value>Wildland Fire Base hours</value>
+  </data>
+  <data name="WildlandFireOT" xml:space="preserve">
+    <value>Wildland Fire OT</value>
+  </data>
+  <data name="MeetingBriefing" xml:space="preserve">
+    <value>Meeting / Briefing</value>
+  </data>
+  <data name="FacilitiesMaintenance" xml:space="preserve">
+    <value>Facilities Maintenance</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GreenFireTruck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GreenFireTruck.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

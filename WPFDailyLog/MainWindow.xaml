@@ -1,0 +1,301 @@
+﻿<Window x:Class="WPFDailyLog.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Workbook Creator - Home" Height="830" Width="1550" Background="#FFB4AFA4">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="160"/>
+        </Grid.ColumnDefinitions>
+        
+        <!-- Grid Contains Header info-->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1.75*"/>
+                    <ColumnDefinition Width=".7*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Station" FontSize="18" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Width="75"
+                           Margin="5,0,20,0"/>
+                    <TextBox x:Name="txtStation" FontSize="18" FontWeight="Bold" VerticalContentAlignment="Center" 
+                             HorizontalContentAlignment="Right" HorizontalAlignment="Right" 
+                             Width="100" Height="30"  TextAlignment="Right"/>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                    <Label Content="Forest" FontSize="18" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Width="75"
+                           Margin="5,0,20,0"/>
+                    <ComboBox x:Name="cboForest" FontSize="18" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"
+                              Height="30" Width="300"/>
+                </StackPanel>
+                <StackPanel Grid.Column="2" Orientation="Horizontal">
+                    <Label Content="Tour" FontSize="18" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="5,0,20,0"/>
+                    <ComboBox x:Name="cboTour" FontSize="18" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Height="30" Width="90" Margin="0,0,30,0"/>
+                </StackPanel>
+                <StackPanel Grid.Column="3" Orientation="Horizontal">
+                    <Label Content="Month" FontSize="18" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="5,0,20,0"/>
+                    <ComboBox x:Name="cboMonth" FontSize="18" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Height="30" Width="150"/>
+                </StackPanel>
+                <StackPanel Grid.Column="4" Orientation="Horizontal">
+                    <Label Content="Year" FontSize="18" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="5,0,20,0"/>
+                    <ComboBox x:Name="cboYear" FontSize="18" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Height="30" Width="100"/>
+                </StackPanel>
+            </Grid>
+            <Label Content="Daily Log WorkBook Creator" FontSize="22" FontWeight="ExtraBold" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+
+        </Grid>
+        <!-- Grid contains crew info -->
+        <Grid x:Name="grdCrewInfo" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.25*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="229"/>
+                <ColumnDefinition Width="267"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="121"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="90"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Last"  FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Background="{x:Null}"/>
+                    <Label Content="First" Grid.Column="1" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Background="{x:Null}"/>
+                </Grid>
+                <Label Content="Employee Name" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="{x:Null}"/>
+            </Grid>
+            
+            <Label Content="Days Off" Grid.Column="2" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="Sunday" Grid.Column="3" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="Monday" Grid.Column="4" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="Tuesday" Grid.Column="5" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="Wednesday" Grid.Column="6" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="Thursday" Grid.Column="7" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="Friday" Grid.Column="8" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="Saturday" Grid.Column="9" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <!-- Captain row -->
+            <Label Content="Captain" FontSize="16" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Grid Grid.Column="1" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.25*"/>
+                    <ColumnDefinition Width=".75*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="employee1" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="5,0,5,0"/>
+                <TextBox x:Name="employee1First" Grid.Column="1" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="0,0,5,0"/>
+            </Grid>
+            
+            <ComboBox x:Name="employee1DaysOff" Grid.Column="2" Grid.Row="1" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                      Margin="5,0,5,0" DropDownClosed="employeeDaysOff_DropDownClosed" KeyUp="employeeDaysOff_KeyUp"/>
+            <!-- Engineer Row-->
+            <Label Content="Engineer" FontSize="16" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Grid Grid.Column="1" Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.25*"/>
+                    <ColumnDefinition Width=".75*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="employee2" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="5,0,5,0"/>
+                <TextBox x:Name="employee2First" Grid.Column="1" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="0,0,5,0"/>
+            </Grid>
+            <ComboBox x:Name="employee2DaysOff" Grid.Column="2" Grid.Row="2" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                      Margin="5,0,5,0" DropDownClosed="employeeDaysOff_DropDownClosed" KeyUp="employeeDaysOff_KeyUp"/>
+            <!-- AFEO Row-->
+            <Label Content="AFEO" FontSize="16" Grid.Row="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Grid Grid.Column="1" Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.25*"/>
+                    <ColumnDefinition Width=".75*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="employee3" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="5,0,5,0"/>
+                <TextBox x:Name="employee3First" Grid.Column="1" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="0,0,5,0"/>
+            </Grid>
+            <ComboBox x:Name="employee3DaysOff" Grid.Column="2" Grid.Row="3" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                      Margin="5,0,5,0" DropDownClosed="employeeDaysOff_DropDownClosed" KeyUp="employeeDaysOff_KeyUp"/>
+            <!-- SFF Row-->
+            <Label Content="Senior FF" FontSize="16" Grid.Row="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Grid Grid.Column="1" Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.25*"/>
+                    <ColumnDefinition Width=".75*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="employee4" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="5,0,5,0"/>
+                <TextBox x:Name="employee4First" Grid.Column="1" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="5,0,5,0"/>
+            </Grid>
+            <ComboBox x:Name="employee4DaysOff" Grid.Column="2" Grid.Row="4" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                      Margin="5,0,5,0" DropDownClosed="employeeDaysOff_DropDownClosed" KeyUp="employeeDaysOff_KeyUp"/>
+            <!-- SFF/FF Row-->
+            <Label Content="Firefighter" FontSize="16" Grid.Row="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Grid Grid.Column="1" Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.25*"/>
+                    <ColumnDefinition Width=".75*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="employee5" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="5,0,5,0"/>
+                <TextBox x:Name="employee5First" Grid.Column="1" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="5,0,5,0"/>
+            </Grid>
+            <ComboBox x:Name="employee5DaysOff" Grid.Column="2" Grid.Row="5" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                      Margin="5,0,5,0" DropDownClosed="employeeDaysOff_DropDownClosed" KeyUp="employeeDaysOff_KeyUp"/>
+            <!-- FF Row -->
+            <Label Content="Firefighter" FontSize="16" Grid.Row="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Grid Grid.Column="1" Grid.Row="6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.25*"/>
+                    <ColumnDefinition Width=".75*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="employee6" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="5,0,5,0"/>
+                <TextBox x:Name="employee6First" Grid.Column="1" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="5,0,5,0"/>
+            </Grid>
+            <ComboBox x:Name="employee6DaysOff" Grid.Column="2" Grid.Row="6" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                      Margin="5,0,5,0" DropDownClosed="employeeDaysOff_DropDownClosed" KeyUp="employeeDaysOff_KeyUp"/>
+            <!-- FF Row -->
+            <Label Content="Firefighter" FontSize="16" Grid.Row="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Grid Grid.Column="1" Grid.Row="7">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.25*"/>
+                    <ColumnDefinition Width=".75*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="employee7" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="5,0,5,0"/>
+                <TextBox x:Name="employee7First" Grid.Column="1" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="5,0,5,0"/>
+            </Grid>
+            <ComboBox x:Name="employee7DaysOff" Grid.Column="2" Grid.Row="7" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                      Margin="5,0,5,0" DropDownClosed="employeeDaysOff_DropDownClosed" KeyUp="employeeDaysOff_KeyUp"/>
+            <!-- AFEO/WT -->
+            <Label Content="AFEO/WT" FontSize="16" Grid.Row="8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Grid Grid.Column="1" Grid.Row="8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.25*"/>
+                    <ColumnDefinition Width=".75*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="employee8" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="5,0,5,0"/>
+                <TextBox x:Name="employee8First" Grid.Column="1" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="5,0,5,0"/>
+            </Grid>
+            <ComboBox x:Name="employee8DaysOff" Grid.Column="2" Grid.Row="8" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                      Margin="5,0,5,0" DropDownClosed="employeeDaysOff_DropDownClosed" KeyUp="employeeDaysOff_KeyUp"/>
+            <!-- FF Row -->
+            <Label Content="Firefighter" FontSize="16" Grid.Row="9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Grid Grid.Column="1" Grid.Row="9">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.25*"/>
+                    <ColumnDefinition Width=".75*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="employee9" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="5,0,5,0"/>
+                <TextBox x:Name="employee9First" Grid.Column="1" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="5,0,5,0"/>
+            </Grid>
+            <ComboBox x:Name="employee9DaysOff" Grid.Column="2" Grid.Row="9" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                      Margin="5,0,5,0" DropDownClosed="employeeDaysOff_DropDownClosed" KeyUp="employeeDaysOff_KeyUp"/>
+            <!-- FF Row -->
+            <Label Content="Firefighter" FontSize="16" Grid.Row="10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Grid Grid.Column="1" Grid.Row="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.25*"/>
+                    <ColumnDefinition Width=".75*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="employee10" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="5,0,5,0"/>
+                <TextBox x:Name="employee10First" Grid.Column="1" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                     Margin="5,0,5,0"/>
+            </Grid>
+            <ComboBox x:Name="employee10DaysOff" Grid.Column="2" Grid.Row="10" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="30"
+                      Margin="5,0,5,0" DropDownClosed="employeeDaysOff_DropDownClosed" KeyUp="employeeDaysOff_KeyUp"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="229"/>
+                <ColumnDefinition Width="267"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="121"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="90"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Number Of Employees" Grid.ColumnSpan="3" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Margin="0,0,10,0"/>
+            <Label x:Name="sundayTotal" Content="3" Grid.Column="3" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <Label x:Name="mondayTotal" Content="3" Grid.Column="4" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <Label x:Name="tuesdayTotal" Content="3" Grid.Column="5" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <Label x:Name="wednesdayTotal" Content="3" Grid.Column="6" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <Label x:Name="thursdayTotal" Content="3" Grid.Column="7" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <Label x:Name="fridayTotal" Content="3" Grid.Column="8" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+            <Label x:Name="saturdayTotal" Content="3" Grid.Column="9" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button x:Name="btnViewResponse" Content="View Response"  Grid.Row="1" FontSize="18" Height="30" Margin="10,0,10,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnViewResponse_Click"/>
+            <Button x:Name="btnEnterResponse" Content="Enter Response" Grid.Row="2" FontSize="18" Height="30" Margin="10,0,10,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnEnterResponse_Click"/>
+            <Button x:Name="btnYearlyReport" Content="Generate&#10;Yearly Report" Grid.Row="3" Grid.RowSpan="2" FontSize="18" Height="60" Margin="10,0,10,0"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnYearlyReport_Click"/>
+            <Button x:Name="btnGenerateWorkbook" Content="Create Logbook" Grid.Row="5" FontSize="18" Height="30" Margin="10,0,10,0"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnGenerateWorkbook_Click"/>
+        </Grid>
+
+        
+    </Grid>
+</Window>

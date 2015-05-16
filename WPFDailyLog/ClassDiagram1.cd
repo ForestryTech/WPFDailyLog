@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WPFDailyLog.Employee">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAACAAAAAgA=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WPFDailyLog.MonthlySummarySheet">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAIAAAIAAAAAAACQAAAAAAAAAIAHAQIRAAAAA=</HashCode>
+      <FileName>MonthlySummarySheet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WPFDailyLog.LogWorkSheet">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>LogWorkSheet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WPFDailyLog.StationInfoSheet">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAEAAAIAAAQAAAEAAAICCAAgAAAAABAADAAAQAAoCA=</HashCode>
+      <FileName>StationInfoSheet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WPFDailyLog.DailyLogBook">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBIAIAAgAAAAAAAAAASICAACCEACAAhAIAAgIAACIGA=</HashCode>
+      <FileName>DailyLogBook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WPFDailyLog.DailyLogWorksheet">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAMAAAAAAAAAACAAAAAyQAAQAAAABAIAAAAAAA=</HashCode>
+      <FileName>DailyLogWorksheet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WPFDailyLog.DailyLogCells">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAACAEBAAABAQAAAAAAQAACBEAAAgQEAAA=</HashCode>
+      <FileName>DailyLogCells.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WPFDailyLog.CellText">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAgAAgAAAAAAAAAAAAAAAABAAAgAAAAAA=</HashCode>
+      <FileName>DailyLogCells.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="WPFDailyLog.Forest">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAIgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forest.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="WPFDailyLog.FontStyle">
+    <Position X="13" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAEAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>DailyLogCells.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WPFDailyLog.FontPosition">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAIAAA=</HashCode>
+      <FileName>DailyLogCells.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WPFDailyLog.FontColor">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>DailyLogCells.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WPFDailyLog.CellBorder">
+    <Position X="13" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DailyLogCells.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
